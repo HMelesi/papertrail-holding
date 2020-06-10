@@ -1,38 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron&family=Sansita:wght@800&display=swap");
+
+:root {
+  --color--light: #f3a712;
+  --color--dark: #171738;
+  --color--mid: #ff686b;
+  --color--lightest: #f5f5f5;
+  --color--bright: #49beaa;
+  --color--mute: #456990;
+  --font--title: "Sansita", sans-serif;
+  --font--content: "Kameron", serif;
+  --border--radius: 5px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 60%;
+  margin-top: 100px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+}
+
+.link__light {
+  text-decoration: none;
+  color: var(--color--light);
+}
+
+.link__light:visited {
+  text-decoration: none;
+  color: var(--color--light);
+}
+
+.link__pink {
+  text-decoration: none;
+  color: var(--color--mid);
+}
+
+.link__pink:visited {
+  text-decoration: none;
+  color: var(--color--mid);
+}
+
+.link__dark {
+  text-decoration: none;
+  color: var(--color--dark);
+}
+
+.link__dark:visited {
+  text-decoration: none;
+  color: var(--color--dark);
+}
+
+.page__header {
+  font-family: var(--font--title);
+  color: var(--color--mid);
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page__subheader {
+  font-family: var(--font--title);
+  color: var(--color--light);
+  font-size: calc(6px + 2vmin);
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page__content {
+  font-family: var(--font--content);
+  font-size: calc(8px + 1vmin);
 }

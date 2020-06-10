@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import logo from "./images/logo.png";
+import { GrInstagram, GrTwitter } from "react-icons/gr";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={logo} alt="papertrail logo" className="logo" />
+      <h1 className="page__header">
+        Site coming soon! In the meantime we are on...
+      </h1>
+      <a
+        href="https://www.instagram.com/the_papertrail_/"
+        target="blank"
+        className="social link__light"
+      >
+        <h2 className="page__subheader">
+          <GrInstagram />
+        </h2>
+        <h2 className="page__subheader">instagram</h2>
+      </a>
+      <a
+        href="https://twitter.com/the_papertrail_"
+        target="blank"
+        className="social link__light"
+      >
+        <h2 className="page__subheader">
+          <GrTwitter />
+        </h2>
+        <h2 className="page__subheader">twitter</h2>
+      </a>
     </div>
   );
 }
